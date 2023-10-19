@@ -1,0 +1,64 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		
+	<div class="stack gap-2 lg:gap-4">
+		<i class="fas fa-shield-alt" style="color: var(--accent-regular); font-size: 2.5rem;"></i>
+		<h2>Sécurité Informatique</h2>
+		<p>Auto-formation sur MOOC ANSSI et Open Classroom. Passionné par la protection des données et la prévention des violations.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<i class="fas fa-network-wired" style="color: var(--accent-regular); font-size: 2.5rem;"></i>
+		<h2>Administration réseau</h2>
+		<p>Maîtrise des protocoles réseau TCP/IP, VLAN, LAN, Mode Trunk, Configuration et maintenance de Routeurs, Switchs et Serveurs, DHCP, DNS, HTTPS/http, Adressage IPv4/IPv6, Cisco Packet tracer, Fortinet, Routage statique et dynamique.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<i class="fas fa-code" style="color: var(--accent-regular); font-size: 2.5rem;"></i>
+		<h2>Développement Web</h2>
+		<p>Compétences en C, Python, Java, Kotlin, HTML/CSS, JavaScript, Bootstrap, PHP, Symfony, Node JS, UML, Git, GitHub, WampServer, Docker.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
