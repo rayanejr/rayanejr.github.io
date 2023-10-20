@@ -69,6 +69,17 @@ const projects = (await getCollection('work'))
 					<p>Découvrez ci-dessous quelques-uns de mes projets marquants réalisés au cours des dernières années.</p>
 				</header>
 
+				<div class="gallery">
+					<Grid variant="offset">
+						{
+							projects.map((project) => (
+								<li>
+									<PortfolioPreview project={project} />
+								</li>
+							))
+						}
+					</Grid>
+				</div>
 				
 				<div class="cta">
 					<CallToAction href="/work/">

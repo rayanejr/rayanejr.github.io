@@ -1,7 +1,7 @@
 ---
 title: sotum_projet_symfony
-publishDate: [2023-10-07]
-img: sotum_projet_symfony.jpg
+publishDate: 2022-10-07 17:00:00
+img: /assets/sotum_projet_symfony.jpg
 img_alt: Une image représentant le jeu Sotum
 description: |
   Sotum est une expérience ludique qui vise à enrichir le vocabulaire des joueurs tout en les divertissant. Le jeu propose une aventure à travers les lettres et les mots, offrant des défis constants et des niveaux variés. Les joueurs peuvent s'inscrire, personnaliser leur profil, et suivre leurs progrès. Le projet utilise des technologies telles que Symfony, PHP 8.1, Apache, MySQL, Docker, Node.js, et Yarn.
@@ -11,34 +11,30 @@ tags:
   - Symfony
 ---
 
-# Sotum 🎮 - Stimulez votre esprit avec des mots!
 
-![Sotum Logo](https://www.hebergeur-image.com/upload/90.16.50.123-652a62920a53f.png)
-
-> **"Le jeu qui enrichit votre vocabulaire tout en vous amusant!"**
+ ## "Le jeu qui enrichit votre vocabulaire tout en vous amusant!"
 
 Sotum est bien plus qu'un simple jeu de mots. C'est une expérience, une aventure à travers les lettres et les mots. Rejoignez-nous et découvrez un monde où chaque mot est un défi, chaque lettre une opportunité.
 
----
 
-## 🚀 Sommaire
+
+### 🚀 Sommaire
 
 - [🌟 Fonctionnalités](#-fonctionnalités)
 - [🛠 Technologies](#-technologies)
 - [🔧 Installation & Configuration](#-installation--configuration)
 - [🎮 Comment jouer?](#-comment-jouer)
 
----
 
-## 🌟 Fonctionnalités
+
+### 🌟 Fonctionnalités
 
 - **Inscription & Connexion** - Commencez votre aventure avec nous.
 - **Profil Utilisateur** - Personnalisez votre espace et suivez vos progrès.
 - **Jeu Interactif** - Des niveaux variés, des défis constants.
 
----
 
-## 🛠 Technologies
+### 🛠 Technologies
 
 - **Backend** : Symfony & PHP 8.1
 - **Serveur** : Apache
@@ -47,9 +43,8 @@ Sotum est bien plus qu'un simple jeu de mots. C'est une expérience, une aventur
 - **Frontend** : Node.js & Yarn
 - **Tests** : Google Chrome
 
----
 
-## 🔧 Installation & Configuration
+### 🔧 Installation & Configuration
 
 1. **Cloner le dépôt**
 
@@ -76,14 +71,14 @@ Sotum est bien plus qu'un simple jeu de mots. C'est une expérience, une aventur
 
 
 
-## 🎮 Comment jouer?
+### 🎮 Comment jouer?
 
 - **Jouer** : Pour jouer, accédez à `/gamepage`.
 - **Inscription** : Pour vous inscrire, accédez à `/register`.
 - **Connexion** : Pour vous connecter, accédez à `/login`.
 - **Profil** : Pour voir ou mettre à jour votre profil, accédez à `/profile`.
 
-## Technologies utilisées:
+### Technologies utilisées:
 
 - Backend : Symfony & PHP 8.1
 - Serveur : Apache
