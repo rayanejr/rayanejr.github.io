@@ -1,6 +1,6 @@
 ---
 title: sotum_projet_symfony
-publishDate: 2022-10-07 17:00:00
+publishDate: 2023-10-15 17:20:00
 img: /assets/sotum_projet_symfony.jpg
 img_alt: Une image représentant le jeu Sotum
 description: |
@@ -36,12 +36,11 @@ Sotum est bien plus qu'un simple jeu de mots. C'est une expérience, une aventur
 
 ### 🛠 Technologies
 
-- **Backend** : Symfony & PHP 8.1
+- **Backend** : Symfony 
+- **Frontend** : HTML/CSS & Bootstrap
 - **Serveur** : Apache
 - **Base de données** : MySQL
 - **Containerisation** : Docker
-- **Frontend** : Node.js & Yarn
-- **Tests** : Google Chrome
 
 
 ### 🔧 Installation & Configuration
@@ -80,11 +79,10 @@ Sotum est bien plus qu'un simple jeu de mots. C'est une expérience, une aventur
 
 ### Technologies utilisées:
 
-- Backend : Symfony & PHP 8.1
-- Serveur : Apache
-- Base de données : MySQL
-- Containerisation : Docker
-- Frontend : Node.js & Yarn
-- Tests : Google Chrome
+- **Backend** : Symfony 
+- **Frontend** : HTML/CSS & Bootstrap
+- **Serveur** : Apache
+- **Base de données** : MySQL
+- **Containerisation** : Docker
 
 

@@ -1,6 +1,6 @@
 ---
 title: ECEbook
-publishDate: 2023-05-25 15:59:06
+publishDate: 2023-02-25 15:59:06
 img: /assets/ECEbook.jpg
 img_alt: Une image représentant le projet ECEbook
 description: |
