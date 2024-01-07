@@ -1,6 +1,6 @@
 ---
-title: tic-tac-toe-android
-publishDate: 2023-10-20 12:00:00
+title: Gamebox-android
+publishDate: 2023-11-20 12:00:00
 img: /assets/tic-tac-toe-android.jpg
 img_alt: Une image représentant le jeu Tic-Tac-Toe Android
 description: |
@@ -33,7 +33,7 @@ Le jeu Tic-Tac-Toe pour Android est une implémentation simple et amusante du c�
 **Cloner le dépôt**
 
    ```bash
-   git clone https://github.com/rayanejr/tic-tac-toe-android.git
+   git clone https://github.com/rayanejr/Gamebox-main.git
    cd tic-tac-toe-android
    ```
 

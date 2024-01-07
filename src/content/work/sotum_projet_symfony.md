@@ -1,6 +1,6 @@
 ---
 title: sotum_projet_symfony
-publishDate: 2023-10-15 17:20:00
+publishDate: 2023-11-15 17:20:00
 img: /assets/sotum_projet_symfony.jpg
 img_alt: Une image représentant le jeu Sotum
 description: |
