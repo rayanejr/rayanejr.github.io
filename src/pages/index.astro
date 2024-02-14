@@ -1,130 +1,110 @@
 ---
+// Importation des composants et des données
 import { getCollection } from 'astro:content';
-
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-// Component Imports
 import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
-
-// Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
 
-// Content Fetching: List four most recent work projects
+// Récupération des quatre derniers projets
 const projects = (await getCollection('work'))
-	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-	.slice(0, 4);
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 4);
 ---
 
 <BaseLayout>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<div class="stack gap-20 lg:gap-48">
-		<div class="wrapper stack gap-8 lg:gap-20">
-			<header class="hero">
-				<Hero
-					title="Bonjour, je m'appelle Rayane JERBI"
-					tagline="Je suis étudiant en Bachelor Développeur sécurité et IT à l'ECE Paris et je recherche un stage de 4 à 6 mois a partir de Mars 2024 en cybersécurité et IT."
-					align="start"
-				>
-					<div class="roles">
-						<Pill><i class="fas fa-code" style="font-size: 1.33em;"></i> Développeur Sécurité et IT</Pill>
-						<Pill><i class="fas fa-university" style="font-size: 1.33em;"></i> Étudiant à l'ECE Paris</Pill>
-						<Pill><i class="fas fa-briefcase" style="font-size: 1.33em;"></i> Recherche un stage de fin d'étude</Pill>
-					</div>
-				</Hero>
-		
-				<img
-					alt="Rayane JERBI"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
-				/>
-			</header>
-		
-			<!-- Bouton de téléchargement du CV -->
-			<div class="cta">
-				<CallToAction href="/assets/CV Rayane JERBI.pdf" download>
-					Télécharger mon CV
-					<Icon icon="download" size="1.2em" />
-				</CallToAction>
-			</div>
-		
-			<Skills />
-		</div>
-		
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <div class="stack gap-20 lg:gap-48">
+    <div class="wrapper stack gap-8 lg:gap-20">
+      <header class="hero">
+        <Hero
+          title="Bonjour, je m'appelle Rayane JERBI"
+          tagline="Je suis étudiant en Bachelor Développeur sécurité et IT à l'ECE Paris et je recherche un stage de 4 à 6 mois à partir d'Avril 2024 en cybersécurité et IT."
+          align="start"
+        >
+          <div class="roles">
+            <Pill><i class="fas fa-shield-alt"></i> Administrateur Systèmes & Réseaux</Pill>
+            <Pill><i class="fas fa-university"></i> Étudiant à l'ECE Paris</Pill>
+            <Pill><i class="fas fa-briefcase"></i> Recherche un stage de fin d'étude</Pill>
+          </div>
+        </Hero>
+        <img alt="Rayane JERBI" width="480" height="620" src="/assets/portrait.jpg" />
+      </header>
 
-		<main class="wrapper stack gap-20 lg:gap-48">
-			<section class="section with-background with-cta">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mes derniers projets</h3>
-					<p>Découvrez ci-dessous quelques-uns de mes projets marquants réalisés au cours des dernières années.</p>
-				</header>
+      <!-- Bouton de téléchargement du CV -->
+      <div class="cta">
+        <CallToAction href="/assets/CV Rayane JERBI.pdf" download>
+          Télécharger mon CV <i class="fas fa-download" style="font-size: 1.2em;"></i>
+        </CallToAction>
+      </div>
 
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-				
-				<div class="cta">
-					<CallToAction href="/work/">
-						Tous mes projets
-						<Icon icon="arrow-right" size="1.2em" />
-					</CallToAction>
-				</div>
-				
-			</section>
+      <Skills />
+    </div>
 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Compétences</h3>
-					<p>
-						Au fil des années, j'ai acquis et perfectionné un ensemble de compétences techniques et personnelles. Découvrez-les ci-dessous.
-					</p>
-				</header>
-			
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							[
-								'Sécurité Informatique',
-								'Systèmes d\'Exploitation',
-								'Développement Web',
-								'Base de Données',
-								'Virtualisation',
-								'Réseaux Informatiques',
-								'Bureautique',
-								'Méthodologies de travail'
-							].map((competence) => (
-								<li class="mention-card">
-									<p>{competence}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
-			
-		</main>
+    <main class="wrapper stack gap-20 lg:gap-48">
+      <section class="section with-background with-cta">
+        <header class="section-header stack gap-2 lg:gap-4">
+          <h3>Mes derniers projets</h3>
+          <p>Découvrez ci-dessous quelques-uns de mes projets marquants réalisés au cours des dernières années.</p>
+        </header>
 
-		<ContactCTA />
-	</div>
+        <div class="gallery">
+          <Grid variant="offset">
+            {
+              projects.map((project) => (
+                <li>
+                  <PortfolioPreview project={project} />
+                </li>
+              ))
+            }
+          </Grid>
+        </div>
+        
+        <div class="cta">
+          <CallToAction href="/work/">
+            Tous mes projets <i class="fas fa-arrow-right" style="font-size: 1.2em;"></i>
+          </CallToAction>
+        </div>
+      </section>
+
+      <!-- Compétences section -->
+      <section class="section with-background bg-variant">
+        <header class="section-header stack gap-2 lg:gap-4">
+          <h3>Compétences</h3>
+          <p>Au fil des années, j'ai acquis et perfectionné un ensemble de compétences techniques et personnelles. Découvrez-les ci-dessous.</p>
+        </header>
+
+        <div class="gallery">
+          <Grid variant="small">
+            {
+              [
+                'Sécurité Informatique',
+                'Systèmes d\'Exploitation',
+                'Développement Web',
+                'Base de Données',
+                'Virtualisation',
+                'Réseaux Informatiques',
+                'Bureautique',
+                'Méthodologies de travail'
+              ].map((competence) => (
+                <li class="mention-card">
+                  <p>{competence}</p>
+                </li>
+              ))
+            }
+          </Grid>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
 </BaseLayout>
+
 
 <style>
 	.hero {

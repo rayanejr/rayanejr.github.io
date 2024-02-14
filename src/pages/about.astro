@@ -1,91 +1,95 @@
 ---
+// Importation des composants nécessaires
 import BaseLayout from '../layouts/BaseLayout.astro';
-
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Rayane JERBI" description="About Rayane JERBI">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About Rayane JERBI"
-				tagline="Étudiant en Bachelor Développeur Sécurité et IT, passionné par l'informatique et la technologie. Découvrez mon parcours et mes compétences ci-dessous."
-			>
-			<img
+<BaseLayout title="About | Rayane JERBI" description="Découvrez le parcours et les compétences de Rayane JERBI, étudiant en Bachelor Développeur Sécurité et IT.">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="À propos de Rayane JERBI"
+        tagline="Étudiant en troisième année de Bachelor Développeur Sécurité et IT à l'ECE Paris, passionné par l'informatique, la cybersécurité et les technologies émergentes."
+      >
+	  <img
 			width="1553"
 			height="873"
 			src="/assets/portrait.jpg"
 			alt="Rayane JERBI"
 		/>
-			</Hero>
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Actuellement étudiant à l'Ecole Centrale d’Electronique (ECE) à Paris, je me spécialise dans la cybersécurité et l'IT. J'ai une passion pour la technologie et je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans ce domaine.
-					</p><br>
-					<p>
-						Au cours de mes études, j'ai acquis une solide expérience en développement web, en systèmes d'exploitation et en sécurité informatique. J'ai également eu l'opportunité de travailler sur plusieurs projets passionnants, notamment la création de réseaux locaux virtuels et le développement de sites web.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>
-						- Bachelor : Développeur Sécurité et IT à l'Ecole Centrale d’Electronique (ECE), Paris. 3ème de la promotion.
-					</p>
-					<p>
-						- Baccalauréat Général : Scientifique au Lycée Carnot, Cannes. Mention Bien avec une option en Musique orientale au Conservatoire de Cannes.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Expériences Professionnelles</h2>
-				<div class="content">
-					
-					<div class="experience-item">
-						<strong>Mai 2023 - Août 2023</strong> - <em>Administrateur Systèmes & Réseaux</em> – Next Step IT, Tunis
-						<p>
-							Stage de 4 mois : Installation, paramétrage, sécurisation et maintenance des infrastructures. Configuration de FortiGates 30E, FortiSwitch, FortiAP, ACLs, antivirus et filtres DNS. Sensibilisation des employés aux bonnes pratiques informatiques.
-						</p>
-					</div><br>
-			
-					<div class="experience-item">
-						<strong>Juil. 2022 - Août 2022</strong> - <em>Administrateur Systèmes & Réseaux</em> - Siège de la Banque Tuniso-Libyenne, Tunis
-						<p>
-							Stage de 2 mois : Mise en place d'équipements réseaux et de sécurité. Mise à jour de l'architecture réseau. Migration d’équipements Cisco vers Fortinet. Configuration de solutions de sécurité.
-						</p>
-					</div><br>
-			
-					<div class="experience-item">
-						<strong>Sept. 2021 – Actuel</strong> - <em>Ambassadeur</em> - ECE, Paris
-						<p>
-							Organisation d'événements de promotions, prise de contact avec étudiants et parents.
-						</p>
-					</div>
+      <section>
+        <h2 class="section-title">Parcours</h2>
+        <div class="content">
+          <p>
+            Actuellement étudiant à l'Ecole Centrale d’Electronique (ECE) à Paris, je me spécialise en cybersécurité et technologies de l'information. Passionné par l'évolution constante de la technologie, je cherche constamment à apprendre et à me développer dans ce domaine.
+          </p>
+          <p>
+            Au cours de mes études, j'ai acquis une expérience pratique en développement web, systèmes d'exploitation, et en cybersécurité, à travers divers projets et stages, notamment dans la création de réseaux locaux virtuels et le développement d'applications web et mobiles.
+          </p>
+        </div>
+      </section>
 
+      <section>
+        <h2 class="section-title">Formation</h2>
+        <div class="content">
+          <p>
+            - Bachelor Développeur Sécurité et IT à l'Ecole Centrale d’Electronique (ECE), Paris. Premier de la promotion.
+          </p>
+          <p>
+            - Baccalauréat Général Scientifique au Lycée Carnot, Cannes. Mention Bien, option Musique au Conservatoire de Cannes.
+          </p>
+        </div>
+      </section>
 
-			
-				</div>
-			</section>
-			
-			
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>
-						Curieux, Créatif, Autonome, Organisé, Dynamique, Polyvalent, Travail d'équipe
-					</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Expériences Professionnelles</h2>
+        <div class="content">
+          <div class="experience-item">
+            <strong>Mai 2023 - Août 2023</strong> - <em>Administrateur Systèmes & Réseaux</em> – Next Step IT, Tunis
+            <p>
+              Stage de 4 mois : Gestion de projets IT, configuration de solutions Fortinet, sensibilisation aux bonnes pratiques informatiques.
+            </p>
+          </div>
+          <div class="experience-item">
+            <strong>Juil. 2022 - Août 2022</strong> - <em>Administrateur Systèmes & Réseaux</em> - Siège de la Banque Tuniso-Libyenne, Tunis
+            <p>
+              Stage de 2 mois : Renouvellement de l'architecture réseau, migration Cisco vers Fortinet, mise à jour des profils de sécurité.
+            </p>
+          </div>
+          <div class="experience-item">
+            <strong>Sept. 2021 – Actuel</strong> - <em>Ambassadeur</em> - ECE, Paris
+            <p>
+              Promotion de l'école, organisation d'événements, interaction avec la communauté éducative.
+            </p>
+          </div>
+        </div>
+      </section>
 
-		<ContactCTA />
-	</div>
+      <section>
+        <h2 class="section-title">Compétences</h2>
+        <div class="content">
+          <p>
+            - Systèmes d'Exploitation : Linux, Windows, MacOS<br>
+            - Programmation : C, JAVA, Python<br>
+            - Web Front-End : React js, React native, HTML/CSS, Javascript, Bootstrap<br>
+            - Web Back-End : PHP, Symfony, Laravel, Kotlin, JEE, NodeJS<br>
+            - Base de Données : SQL, MongoDB<br>
+            - DevOps & Versionning : Docker, GIT, GitHub, Gitlab<br>
+            - Méthodologie et Conception : Agile SCRUM, UML<br>
+            - Réseaux Informatiques : TCP/IP, VLAN, LAN, DHCP, DNS, HTTPS/HTTP, Routage statique et dynamique<br>
+            - Cybersécurité : Audits de sécurité, Injection SQL, utilisation de Métasploitable
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
 </BaseLayout>
+
 
 <style>
 	p strong, p em {
