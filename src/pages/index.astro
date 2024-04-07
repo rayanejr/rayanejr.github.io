@@ -23,13 +23,13 @@ const projects = (await getCollection('work'))
       <header class="hero">
         <Hero
           title="Bonjour, je m'appelle Rayane JERBI"
-          tagline="Je suis étudiant en Bachelor Développeur sécurité et IT à l'ECE Paris et je recherche un stage de 4 à 6 mois à partir d'Avril 2024 en cybersécurité et IT."
+          tagline="En dernière année de Bachelor Sécurité et IT à l'ECE Paris, je prépare mon diplôme et un Master. Je recherche un stage de 4 à 5 mois pour finir mon bachelor, suivi d'une alternance de deux ans dès septembre 2024 dans la cybersécurité ou le développement web. Motivé et méticuleux, je souhaite enrichir votre entreprise tout en développant mes compétences professionnelles."
           align="start"
         >
           <div class="roles">
             <Pill><i class="fas fa-shield-alt"></i> Administrateur Systèmes & Réseaux</Pill>
             <Pill><i class="fas fa-university"></i> Étudiant à l'ECE Paris</Pill>
-            <Pill><i class="fas fa-briefcase"></i> Recherche un stage de fin d'étude</Pill>
+            <Pill><i class="fas fa-briefcase"></i> Recherche un stage & une alternance</Pill>
           </div>
         </Hero>
         <img alt="Rayane JERBI" width="480" height="620" src="/assets/portrait.jpg" />
@@ -82,14 +82,16 @@ const projects = (await getCollection('work'))
           <Grid variant="small">
             {
               [
-                'Sécurité Informatique',
-                'Systèmes d\'Exploitation',
-                'Développement Web',
-                'Base de Données',
-                'Virtualisation',
-                'Réseaux Informatiques',
-                'Bureautique',
-                'Méthodologies de travail'
+			  'Cybersécurité',
+              'Réseaux Informatiques',
+              'Virtualisation',
+              'Systèmes d\'Exploitation',
+              'DevOps & Versionning',
+              'Programmation',
+              'Développement Full Stack',
+              'Base de Données',
+              'Méthodologie & Conception',
+              'Bureautique'
               ].map((competence) => (
                 <li class="mention-card">
                   <p>{competence}</p>

@@ -10,7 +10,7 @@ import Hero from '../components/Hero.astro';
     <main class="wrapper about">
       <Hero
         title="À propos de Rayane JERBI"
-        tagline="Étudiant en troisième année de Bachelor Développeur Sécurité et IT à l'ECE Paris, passionné par l'informatique, la cybersécurité et les technologies émergentes."
+        tagline="En dernière année de Bachelor Sécurité et IT à l'ECE Paris, je finaliserai mon diplôme ce semestre et entamerai un Master. Actuellement à la recherche d'un stage de 4 à 5 mois pour compléter mon bachelor, je suis également intéressé par une alternance de deux ans à partir de septembre 2024 dans la cybersécurité, les réseaux, ou le développement web et mobile. Passionné et méticuleux, je suis déterminé à enrichir votre entreprise en approfondissant mes compétences dans un environnement professionnel stimulant."
       >
 	  <img
 			width="1553"
@@ -45,6 +45,18 @@ import Hero from '../components/Hero.astro';
       </section>
 
       <section>
+        <h2 class="section-title">Certifications</h2>
+        <div class="content">
+          <ul>
+            <li><strong>Sécurité du Cloud</strong> - Certificat numéro 161aa304-e734-4081-b861-f2dd67795d01, DataScientest, délivré à Paris le 22/03/2024.</li>
+            <li><strong>Introduction à Python</strong> - Certificat numéro 53a03615-872d-4dbb-85b6-b28a6cbf23f3, DataScientest, délivré à Paris le 16/01/2024.</li>
+            <li><strong>Bash and Linux</strong> - Certificat numéro 47c53f3c-e743-4543-a51c-91be51c53f6d, DataScientest, délivré à Paris le 18/01/2024.</li>
+            <li><strong>Prévention Sup'</strong> - Attestation numéro 225868, délivrée le 22/02/2024 pour le serious game en santé et sécurité au travail par INRS.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
         <h2 class="section-title">Expériences Professionnelles</h2>
         <div class="content">
           <div class="experience-item">
@@ -71,19 +83,25 @@ import Hero from '../components/Hero.astro';
       <section>
         <h2 class="section-title">Compétences</h2>
         <div class="content">
-          <p>
-            - Systèmes d'Exploitation : Linux, Windows, MacOS<br>
-            - Programmation : C, JAVA, Python<br>
-            - Web Front-End : React js, React native, HTML/CSS, Javascript, Bootstrap<br>
-            - Web Back-End : PHP, Symfony, Laravel, Kotlin, JEE, NodeJS<br>
-            - Base de Données : SQL, MongoDB<br>
-            - DevOps & Versionning : Docker, GIT, GitHub, Gitlab<br>
-            - Méthodologie et Conception : Agile SCRUM, UML<br>
-            - Réseaux Informatiques : TCP/IP, VLAN, LAN, DHCP, DNS, HTTPS/HTTP, Routage statique et dynamique<br>
-            - Cybersécurité : Audits de sécurité, Injection SQL, utilisation de Métasploitable
-          </p>
+          <ul>
+            <li>Systèmes d'Exploitation: Linux, Windows, MacOS</li>
+            <li>Programmation: C, JAVA, Python</li>
+            <li>Web Front-End: React js, React native, HTML/CSS, Javascript, Bootstrap</li>
+            <li>Web Back-End: PHP, Symfony, Laravel, Kotlin, JEE, NodeJS</li>
+            <li>Base de Données: SQL, MongoDB</li>
+            <li>DevOps & Versionning: Docker, GIT, GitHub, Gitlab</li>
+            <li>Méthodologie et Conception: Agile SCRUM, UML, Figma</li>
+            <li>Réseaux Informatiques:
+              <ul>
+                <li>Protocoles: TCP/IP, VLAN, LAN, Mode Trunk, DHCP, DNS, HTTPS/HTTP, Adressage IPv4/IPv6, Routage statique et dynamique</li>
+                <li>Configuration/Maintenance: Routeurs, Switchs, Serveurs, Firewall</li>
+                <li>Outils: Cisco Packet Tracer, Fortinet</li>
+              </ul>
+            </li>
+            <li>Cybersécurité: Injection SQL, XSS, CSRF, Brute Force, File Upload sous Kali Linux et DVWA, Audits de sécurité avec Métasploitable</li>
+          </ul>
         </div>
-      </section>
+      </section>      
     </main>
 
     <ContactCTA />
